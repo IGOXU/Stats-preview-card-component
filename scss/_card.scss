@@ -1,0 +1,83 @@
+.card-container{
+  align-items: center;
+  background-color: $very-dark-blue;
+  display: grid;
+  justify-content: center;
+  width: 100%;
+}
+
+.card{
+  background-color: $dark-desaturated-blue;
+  border-radius: .5rem;
+  color: $white;
+  height: 779px;
+  margin: 5.5rem 0;
+  max-width: 327px;
+  
+  &__header{
+    background-image: url("../images/image-header-mobile.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-top-left-radius: .6rem;
+    border-top-right-radius: .6rem;
+    height: 240px;
+    position: relative;
+    width: 100%;
+
+    &::before{
+      background-color: $soft-violet;
+      border-top-left-radius: .6rem;
+      border-top-right-radius: .6rem;
+      content: "";
+      height: 100%;
+      mix-blend-mode: multiply;
+      position: absolute;
+      top: 0;
+      width: 100%;
+    }
+  }
+
+  &__body{
+    padding: 2.5rem 2.1875rem;
+    text-align: center;
+   
+    h1{
+      font-family: $inter;
+      font-size: 1.7rem;
+      padding-bottom: 1.4375rem;
+      
+      span{
+        color: $soft-violet;
+      }
+    }
+    
+    p{
+      color: $transparent-white-main;
+      font-family: $lexend-deca;
+      font-size: .9rem;
+      line-height: 1.5rem;
+    }
+    
+  }
+  
+  &__stats{
+    display: grid;
+    font-family: $lexend-deca;
+    grid-template-columns: repeat(1, 1fr);
+    margin-top: 2rem;
+    row-gap: 2.3125rem;
+
+    div {
+      p{
+        color: $white;
+        font-size: 1.4rem;
+        font-weight: 700;        
+      }
+      span{
+        color: $transparent-white-main;
+        font-size: .7em;
+        text-transform: uppercase;
+      }
+    }
+  }
+}
